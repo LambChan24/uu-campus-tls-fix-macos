@@ -37,7 +37,9 @@ UU → 本机 SOCKS5 / HTTP CONNECT（127.0.0.1:17899）
 ## 环境与启动
 
 需求：Python 3.10+ 标准库，无额外依赖。macOS 是本案例平台；代码未在其他平台验证。
-开发时使用 Python 3.14，CI 矩阵不代表已经执行成功。
+开发时使用 Python 3.14；2026-11-09 首次 GitHub Actions 运行中，
+macOS / Python 3.10 与 3.14 均通过 17 项离线测试。后续提交请以 Actions 的实际结果为准，
+测试不覆盖真实校园网、UU 账号或完整远控功能。
 
 ```bash
 python3 --version
