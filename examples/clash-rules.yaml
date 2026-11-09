@@ -1,6 +1,8 @@
 # 只供合并参考，不是可独立加载的完整 Clash 配置。
 # 先备份；将下列 UU 规则放在已有兜底规则之前，保留其他原规则。
 # 不要把整个文件直接覆盖进自己的订阅。
+# UU 内手动代理保持停用；Clash 需开启系统代理并使用规则模式。
+# type: socks5 是 Clash 到本地程序的内部协议，不是让你在 UU 内填写 SOCKS5。
 proxies:
   - name: UU-Local-TLS-Fix
     type: socks5
@@ -10,6 +12,4 @@ proxies:
 
 rules:
   - DOMAIN-SUFFIX,nrd.nie.163.com,UU-Local-TLS-Fix
-  - DOMAIN,uuyc.webapp.163.com,UU-Local-TLS-Fix
-  - DOMAIN,fp.ps.netease.com,UU-Local-TLS-Fix
   # 在此之后保留原有的 rules；故意不添加 MATCH,DIRECT。
